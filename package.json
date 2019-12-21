@@ -8,8 +8,8 @@
     "start": "node src/server.js"
   },
   "engines": {
-    "node": "10.16.*",
-    "yarn": "1.17.*"
+    "node": "10.16.13",
+    "yarn": "1.19.2"
   },
   "dependencies": {
     "cors": "^2.8.5",
