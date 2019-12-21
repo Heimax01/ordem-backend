@@ -8,7 +8,7 @@ const routes = require('./routes')
 
 const app = express();
 
-mongoose.connect('mongodb+srv://Heitor:Dino4678@conversor-kqurg.mongodb.net/conversor?retryWrites=true&w=majority',{
+mongoose.connect(process.env.MONGO_URL,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
