@@ -1,1 +1,1 @@
-web: npm start -- --port $PORT
+web: yarn add node_modules && yarn start 
