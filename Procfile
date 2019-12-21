@@ -1,1 +1,1 @@
-web: yarn add node_modules && yarn start 
+web: yarn start 
