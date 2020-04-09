@@ -1,8 +1,8 @@
-const express = require('express');
-const CoinController = require('./Controllers/CoinController');
+const express = require("express");
+const CoinController = require("./Controllers/ProductController");
 
 const routes = express.Router();
 
-routes.post('/coins', CoinController.store);
-routes.get('/listcoins', CoinController.index);
+routes.post("/products", CoinController.store);
+routes.get("/listproducts", CoinController.index);
 module.exports = routes;
