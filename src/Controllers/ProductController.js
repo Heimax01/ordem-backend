@@ -19,6 +19,12 @@ module.exports = {
     if (!product) {
       product = await Product.create({ weight, description });
     }
+
     return res.json(product);
+  },
+  async delete(req, res) {
+    await Product.findOneAndDelete({ _id: req.params.id });
+
+    return res.status(200).json();
   },
 };
